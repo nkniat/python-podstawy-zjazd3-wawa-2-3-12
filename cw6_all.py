@@ -27,7 +27,6 @@ kandydaci = [
     }
 ]
 
-
 kandydaci.append(kandydat)
 
 print(kandydaci)
@@ -41,3 +40,5 @@ for kandydat in kandydaci:
     else:
         print("Nie spełnia wymagań")
     print('\n')
+
+# zadanie domowe: rozwiąż problem za pomocom zbiorów
