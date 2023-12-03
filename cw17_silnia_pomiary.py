@@ -27,9 +27,17 @@ silnia_rekurencyjnie(5)
 def silnia_modul_math(n):
     return math.factorial(n)
 
+# stwórz jeszcze jedną funkcje do liczenia silni, np. 5!
+# 1 * 1 = 1
+# 1 * 2 = 2
+# 2 * 3 = 6
+# 6 * 4 = 24
+# 24 * 5 = 120
+# reduce functools > to zaimportować i wykorzystać: reduce(function, iterable, initializer=None)
+
 start = time.perf_counter()
 #print("Wynik iteracyjnie", silnia_iteracja(10))
-silnia_iteracja(996)
+silnia_iteracja(99600)
 koniec = time.perf_counter()
 wynik = koniec - start
 print("Czas trwania silnia_iteracja() to: {:.10f}".format(wynik))
@@ -43,7 +51,7 @@ print("Czas trwania silnia_iteracja() to: {:.10f}".format(wynik))
 
 
 start = time.perf_counter()
-silnia_modul_math(996)
+silnia_modul_math(99600)
 koniec = time.perf_counter()
 wynik = koniec - start
 print("Czas trwania silnia_modul_math() to: {:.10f}".format(wynik))
