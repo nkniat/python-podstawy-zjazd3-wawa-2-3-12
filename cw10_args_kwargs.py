@@ -1,13 +1,3 @@
-# podejście klasyczne
-def dodawanie(a, b):
-    return a + b
-
-def dodawanie_3_liczb(a, b, c):
-    return a + b
-
-def dodawanie_4_liczb(a, b, c, d):
-    return a + b
-
 # wykorzystanie *args - nieznana liczba argumentów
 # argumenty przekazywane do krotki
 def dodawanie_liczb(*liczby):
